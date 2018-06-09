@@ -1,12 +1,7 @@
-$bg-color:#333;
-$font-color:#fff;
-$primary-color:#008ed6;
-body {
-    background-color: $bg-color;
-    color: $font-color
-}
+/*========== HEADER ==========*/
 
-.navbar {
-    border-bottom: $primary-color 3px solid;
-    opacity: 0.8;
+//Logo
+//Dropdown
+.btn-outline-dark {
+    border-color: transparent;
 }
