@@ -12,43 +12,36 @@
 </head>
 
 <body id="#home">
-    <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+    <nav id="topBar">
+        <!-- navbar spilt into 3 columns -->
         <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span>
-        </button>
-            <a href="index.html" class="navbar-brand">Lively</a>
-            <div class="collapse navbar-collapse" id="#navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#explore-head-section" class="nav-link">Create</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#share-head-section" class="nav-link">Share</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HOME SECTION -->
-    <header id="home-section">
-        <div class="dark-overlay">
-            <div class="home-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h1 class="display-4">Explore places, experience culture, create memories
-                            </h1>
-                        </div>
-
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1>Lively</h1>
+                </div>
+                <div class="col-sm-4">
+                    <h1>London</h1>
+                </div>
+                <div class="col-sm-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-outline-dark dropdown-toggle" type="button" data-toggle="dropdown"><h1>Explore</h1>
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Countries</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+
+        </div>
+    </nav>
+
+
+
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
