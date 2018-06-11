@@ -18,7 +18,7 @@ body {
 }
 
 .cover {
-    background: #2b2d34 url(/img/London.jpg) center;
+    background: url(img/London.jpg) center;
     background-size: cover;
     min-height: 50rem;
     height: auto;
@@ -37,7 +37,7 @@ body {
 }
 
 .cover-2 {
-    background: #2b2d34 url(/img/Japan.jpg) center;
+    background: url(img/Japan.jpg) center;
     background-size: cover;
     min-height: 50rem;
     height: auto;
