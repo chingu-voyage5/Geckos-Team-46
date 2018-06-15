@@ -17,6 +17,9 @@ body {
     margin-top: 0;
 }
 
+
+/* London Section Styling */
+
 .cover {
     background: url(img/London.jpg) center;
     background-size: cover;
@@ -36,6 +39,9 @@ body {
     margin: 2rem auto;
 }
 
+
+/* Japan Section Styling */
+
 .cover-2 {
     background: url(img/Japan.jpg) center;
     background-size: cover;
@@ -48,6 +54,28 @@ body {
 }
 
 .cover-2 p.lead {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff !important;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+
+
+/* Germany Section Styling */
+
+.cover-3 {
+    background: url(/img/Germany.jpg) center;
+    background-size: cover;
+    min-height: 50rem;
+    height: auto;
+    border-radius: 0;
+    width: 100%;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.cover-3 p.lead {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff !important;
     font-size: 2rem;
