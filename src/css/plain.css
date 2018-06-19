@@ -10,7 +10,7 @@ body {
 }
 
 #logo {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Aguafina Script', cursive;
     color: #fff !important;
     font-size: 2rem;
     font-weight: bold;
@@ -21,7 +21,7 @@ body {
 /* London Section Styling */
 
 .cover {
-    background: url(img/London.jpg) center;
+    background: url(img/London_small.jpg) center;
     background-size: cover;
     min-height: 50rem;
     height: auto;
@@ -43,7 +43,7 @@ body {
 /* Japan Section Styling */
 
 .cover-2 {
-    background: url(img/Japan.jpg) center;
+    background: url(img/Japan_small.jpg) center;
     background-size: cover;
     min-height: 50rem;
     height: auto;
@@ -65,7 +65,7 @@ body {
 /* Germany Section Styling */
 
 .cover-3 {
-    background: url(/img/Germany.jpg) center;
+    background: url(img/Germany_small.jpg) center;
     background-size: cover;
     min-height: 50rem;
     height: auto;
