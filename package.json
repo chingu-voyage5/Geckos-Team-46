@@ -6,6 +6,9 @@
     "directories": {
         "doc": "doc"
     },
+    "engines": {
+      "node": "10.4.1"
+    }
     "scripts": {
         "start": "node app",
         "postinstall": "gulp serveprod"
