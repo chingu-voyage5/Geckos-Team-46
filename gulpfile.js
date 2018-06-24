@@ -41,7 +41,7 @@ gulp.task('fa', function() {
 
 gulp.task('serveprod', function() {
   connect.server({
-    root: https://geckos-team-46.herokuapp.com,
+    root: geckos-team-46.herokuapp.com,
     port: process.env.PORT || 5000, // localhost:5000
     livereload: false
   });
