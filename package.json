@@ -10,7 +10,7 @@
       "node": "10.4.1"
     },
     "scripts": {
-        "start": "gulp default"
+        "start": "npm start"
     },
     "repository": {
         "type": "git",
