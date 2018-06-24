@@ -7,8 +7,8 @@
         "doc": "doc"
     },
     "engines": {
-      "node": "10.4.1"
-    }
+      "node": "8.11.3"
+    },
     "scripts": {
         "start": "node app",
         "postinstall": "gulp serveprod"
