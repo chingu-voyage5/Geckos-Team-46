@@ -37,7 +37,6 @@
         "gulp-uglify": "^1.0.1",
         "gulp-usemin": "^0.3.8",
         "gulp-util": "^3.0.1",
-        "assemble": "git://github.com/assemble/assemble#v0.6.0",
         "lodash": "^2.4.1",
         "marked": "^0.3.2",
         "bootstrap": "^4.1.1",
