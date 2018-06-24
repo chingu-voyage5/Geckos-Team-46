@@ -34,6 +34,6 @@
         "popper.js": "^1.14.3"
     },
     "devDependencies": {
-        "browser-sync": "^2.24.4",
+        "browser-sync": "^2.24.4"
     }
 }
