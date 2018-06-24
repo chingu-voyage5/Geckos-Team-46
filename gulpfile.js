@@ -21,6 +21,7 @@ gulp.task('js', function() {
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
         notify: false,
+        open: false,
         server: "./src"
     });
 
