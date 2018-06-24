@@ -1,1 +1,1 @@
-web: gulp build
+web: http-server
