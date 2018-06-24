@@ -20,6 +20,7 @@ gulp.task('js', function() {
 // Watch Sass & Server
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
+        notify: false,
         server: "./src"
     });
 
