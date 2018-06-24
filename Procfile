@@ -1,1 +1,1 @@
-web: http-server
+web: gulp default
