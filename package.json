@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "node app",
-        "postinstall": "gulp default"
+        "postinstall": "gulp build"
     },
     "repository": {
         "type": "git",
