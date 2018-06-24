@@ -7,7 +7,7 @@
         "doc": "doc"
     },
     "engines": {
-      "node": "8.11.3"
+      "node": "10.4.1"
     },
     "scripts": {
         "start": "node app",
