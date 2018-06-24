@@ -39,12 +39,5 @@ gulp.task('fa', function() {
         .pipe(gulp.dest("src/css"));
 });
 
-gulp.task('serveprod', function() {
-  connect.server({
-    root: geckos-team-46.herokuapp.com,
-    port: process.env.PORT || 5000, // localhost:5000
-    livereload: false
-  });
-});
 
-gulp.task('serveprod', ['js', 'serve', 'fa', 'fonts']);
+gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
