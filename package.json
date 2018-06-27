@@ -2,7 +2,7 @@
     "name": "geckos-team-46",
     "version": "1.0.0",
     "description": "travel app",
-    "main": "app.js",
+    "main": "server.js",
     "directories": {
         "doc": "doc"
     },
@@ -24,17 +24,18 @@
     "homepage": "https://github.com/chingu-voyage5/Geckos-Team-46#readme",
     "dependencies": {
         "bootstrap": "^4.1.1",
-        "browser-sync": "^2.24.4",
         "ejs": "^2.6.1",
         "express": "^4.16.3",
         "font-awesome": "^4.7.0",
-        "gulp": "^3.9.1",
-        "gulp-clean": "^0.3.1",
-        "gulp-sass": "^4.0.1",
         "jquery": "^3.3.1",
         "lodash": "^2.4.1",
         "marked": "^0.3.2",
         "popper.js": "^1.14.3"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "browser-sync": "^2.24.4",
+        "gulp": "^3.9.1",
+        "gulp-clean": "^0.3.1",
+        "gulp-sass": "^4.0.1"
+    }
 }
