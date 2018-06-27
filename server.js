@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 
 //Landing page
 app.get("/", function(req, res) {
-    res.render("landing");
+    res.render("landing-page");
 });
 
 
