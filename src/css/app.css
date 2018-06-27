@@ -1,0 +1,61 @@
+.navbar-trans {
+    background: transparent;
+}
+
+
+/* Logo */
+
+a.navbar-brand {
+    font-family: 'Aguafina Script', cursive;
+    color: black !important;
+    font-size: 4.5rem;
+}
+
+
+/* Container for Navbar */
+
+div.container {
+    margin-top: 4
+}
+
+
+/* Navigation links */
+
+a.nav-link {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: black !important;
+}
+
+
+/* Login */
+
+#navbarToggler-1>ul>li:nth-child(6)>a {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: black !important;
+}
+
+
+/* Landing page map Section Styling */
+
+.cover {
+    background: url(/img/travelmap.jpg) center;
+    background-size: cover;
+    min-height: 50rem;
+    height: auto;
+    border-radius: 0;
+    width: 100%;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.cover p.lead {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black !important;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+}
