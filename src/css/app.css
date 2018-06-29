@@ -1,5 +1,11 @@
-.navbar-trans {
-    background: transparent;
+/* Extra Small Screens */
+
+@media (min-width: 575.98px) {
+    a.navbar-brand {
+        font-family: 'Aguafina Script', cursive;
+        color: black;
+        font-size: 4.5rem;
+    }
 }
 
 
@@ -7,7 +13,7 @@
 
 a.navbar-brand {
     font-family: 'Aguafina Script', cursive;
-    color: black !important;
+    color: #28a745 !important;
     font-size: 4.5rem;
 }
 
@@ -25,24 +31,26 @@ a.nav-link {
     font-family: "futura-pt", sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
-    color: black !important;
+    color: #28a745 !important;
 }
 
-
-/* Login */
-
-#navbarToggler-1>ul>li:nth-child(6)>a {
-    font-family: "futura-pt", sans-serif;
-    font-weight: 900;
-    font-size: 1.5rem;
-    color: black !important;
+div.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
 }
 
 
 /* Landing page map Section Styling */
 
 .cover {
-    background: url(/img/travelmap.jpg) center;
+    background: url(/img/festival-cover.jpg) center;
     background-size: cover;
     min-height: 50rem;
     height: auto;
@@ -50,12 +58,4 @@ a.nav-link {
     width: 100%;
     color: #fff;
     padding-top: 1rem;
-}
-
-.cover p.lead {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black !important;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 2rem auto;
 }

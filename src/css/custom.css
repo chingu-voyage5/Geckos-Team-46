@@ -1,0 +1,15 @@
+/*========== CSS Styles That Override Bootstrap CSS==========*/
+
+
+/* Hamburger menu styling */
+
+button.navbar-toggler {
+    border-color: #28a745 !important;
+}
+
+
+/* Card Group on landing page*/
+
+div.card-group {
+    margin-top: 23rem !important;
+}
