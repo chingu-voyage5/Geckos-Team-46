@@ -13,34 +13,106 @@
 
     <!-- This link is to make the Logo be cursive -->
     <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
+    <!-- Link to github font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Lively</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Events <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About the creators</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+    <div class="cover">
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Lively</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mr-5" href="#events-section">Events <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About The Creators</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="display-3">Explore Events!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
 
     <!-- Events Section -->
+    <h1 id="events-section" class="text-center">Search Events</h1>
+    <div class="container search-wrapper">
+        <div id="search-events" class="card card-body">
+            <h1 class="text-center">Search for Events by Name or City</h1>
 
+            <div class="form-group">
+                <label for="event-name">Search by Name or City</label>
+                <input type="text" id="event-name" class="form-control" placeholder="Search By Name or City">
+            </div>
 
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category"></select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="mt-5 form-control btn btn-success" id="submitBtn" value="Search">
+            </div>
+
+        </div>
+        <div id="result" class="row mt-5"></div>
+    </div>
+
+    <h1 id="about" class="text-center">About The Creators</h1>
     <!-- About the creators -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img id="andres" src="src/img/andres-creator.jpg" alt="Jose Andres Rivera">
+            </div>
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta ipsum et facere explicabo distinctio voluptatem quo eligendi minima tempora nulla nostrum cumque amet autem laudantium quas nesciunt, quod accusantium. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Totam quo, laudantium, est consectetur mollitia minima recusandae optio accusamus enim quae alias necessitatibus, odio cumque. Nobis impedit vero laudantium nihil nemo.
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta ipsum et facere explicabo distinctio voluptatem quo eligendi minima tempora nulla nostrum cumque amet autem laudantium quas nesciunt, quod accusantium. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Totam quo, laudantium, est consectetur mollitia minima recusandae optio accusamus enim quae alias necessitatibus, odio cumque. Nobis impedit vero laudantium nihil nemo.
+            </div>
+            <div class="col">
+                <img id="andres" src="" alt="Brandon Vernon">
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img id="andres" src="" alt="Jorge">
+            </div>
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta ipsum et facere explicabo distinctio voluptatem quo eligendi minima tempora nulla nostrum cumque amet autem laudantium quas nesciunt, quod accusantium. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Totam quo, laudantium, est consectetur mollitia minima recusandae optio accusamus enim quae alias necessitatibus, odio cumque. Nobis impedit vero laudantium nihil nemo.
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
-
+    <footer class="mt-5 p-3 bg-primary">
+        <p>Link To Project On Github</p>
+        <i class="fa fa-github"></i>
+        <p class="text-center">Search Events in Your City &copy;</p>
+    </footer>
 </body>
 
 </html>
