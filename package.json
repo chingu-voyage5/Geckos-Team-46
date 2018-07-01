@@ -1,0 +1,41 @@
+{
+    "name": "geckos-team-46",
+    "version": "1.0.0",
+    "description": "travel app",
+    "main": "server.js",
+    "directories": {
+        "doc": "doc"
+    },
+    "engines": {
+        "node": "10.4.1"
+    },
+    "scripts": {
+        "start": "npm start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chingu-voyage5/Geckos-Team-46.git"
+    },
+    "author": "Jose Andres Rivera, Brandon Vernon, Jorge",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/chingu-voyage5/Geckos-Team-46/issues"
+    },
+    "homepage": "https://github.com/chingu-voyage5/Geckos-Team-46#readme",
+    "dependencies": {
+        "bootstrap": "^4.1.1",
+        "ejs": "^2.6.1",
+        "express": "^4.16.3",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.3.1",
+        "lodash": "^2.4.1",
+        "marked": "^0.3.2",
+        "popper.js": "^1.14.3"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.24.4",
+        "gulp": "^3.9.1",
+        "gulp-clean": "^0.3.1",
+        "gulp-sass": "^4.0.1"
+    }
+}
