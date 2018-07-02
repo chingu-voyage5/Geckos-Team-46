@@ -1,9 +1,9 @@
 /* Logo */
 
-a.navbar-brand {
+.lively {
     font-family: 'Aguafina Script', cursive;
     color: #28a745 !important;
-    font-size: 4.5rem;
+    font-size: 7.5rem;
 }
 
 
@@ -23,16 +23,11 @@ a.nav-link {
     color: #28a745 !important;
 }
 
-div.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: transparent;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
+
+/* To float the div.intro container at the bottom of the div.cover container */
+
+h1.display-3 {
+    margin-top: 22rem;
 }
 
 
