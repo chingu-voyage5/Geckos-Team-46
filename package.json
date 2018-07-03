@@ -36,6 +36,5 @@
         "marked": "^0.3.2",
         "popper.js": "^1.14.3"
     },
-    "devDependencies": {
-    }
+    "devDependencies": {}
 }
