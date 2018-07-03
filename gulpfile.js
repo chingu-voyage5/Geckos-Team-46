@@ -24,11 +24,11 @@ gulp.task('serve', ['sass'], function() {
         host: '0.0.0.0',
         notify: false,
         open: false,
-        server: "/"
+        server: "./"
     });
 
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 // Move Fonts Folder to src/fonts
