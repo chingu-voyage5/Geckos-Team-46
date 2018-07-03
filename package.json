@@ -2,7 +2,7 @@
     "name": "geckos-team-46",
     "version": "1.0.0",
     "description": "travel app",
-    "main": "index.html",
+    "main": "index.js",
     "directories": {
         "doc": "doc"
     },
