@@ -24,7 +24,7 @@ gulp.task('serve', ['sass'], function() {
         host: '0.0.0.0',
         notify: false,
         open: false,
-        server: "./src"
+        server: "/"
     });
 
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
