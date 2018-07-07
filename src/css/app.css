@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 100vh 75vh 1fr 100px;
+    grid-template-rows: 100vh auto 1fr 100px;
     grid-template-areas: "header"
                          "search"
                          "creators"
@@ -85,65 +85,3 @@ body {
 .footer {
     grid-area: footer;
 }
-
-
-/*
-/* Logo
-
-a.navbar-brand {
-    font-family: 'Aguafina Script', cursive;
-    color: #28a745 !important;
-    font-size: 4.5rem;
-}
-
-
-/* Container for Navbar
-
-div.container {
-    margin-top: 4;
-}
-
-
-/* Navigation links
-
-a.nav-link {
-    font-family: "futura-pt", sans-serif;
-    font-weight: 900;
-    font-size: 1.5rem;
-    color: #28a745 !important;
-}
-
-div.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: transparent;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-}
-
-
-/* Landing page map Section Styling
-
-.cover {
-    background: url(../img/festival-cover.jpg) center;
-    background-size: cover;
-    min-height: 50rem;
-    height: auto;
-    border-radius: 0;
-    width: 100%;
-    color: #fff;
-    padding-top: 1rem;
-}
-
-nav {
-    background: transparent;
-}
-
-#andres {
-    height: 570px;
-}
-*/
