@@ -1,4 +1,94 @@
-/* Logo */
+body {
+    display: grid;
+    grid-template-rows: 100vh 75vh 1fr 100px;
+    grid-template-areas: "header"
+                         "search"
+                         "creators"
+                         "footer";
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 64px 1fr;
+    grid-template-areas: "nav"
+                         "hero";
+    background: url(../img/festival-cover-crop.jpg) center;
+    background-size: cover;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.mainNav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo  none  navLinks"
+}
+
+.logo {
+    grid-area: logo;
+    font-family: 'Aguafina Script', cursive;
+    color: #28a745 !important;
+    font-size: 36px;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.navLinks {
+    grid-area: navLinks;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: right;
+}
+
+.events {
+    padding-right: 40px;
+    color: white;
+}
+
+.about {
+    padding-right: 40px;
+    color: white;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.search {
+    grid-area: search;
+}
+
+.main {
+    display: none;
+    grid-area: main;
+}
+
+.creators {
+    grid-area: creators;
+}
+
+#andres {
+    width: 50vw;
+}
+
+.creators div {
+    width: 50vw;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/*
+/* Logo
 
 a.navbar-brand {
     font-family: 'Aguafina Script', cursive;
@@ -7,14 +97,14 @@ a.navbar-brand {
 }
 
 
-/* Container for Navbar */
+/* Container for Navbar
 
 div.container {
-    margin-top: 4
+    margin-top: 4;
 }
 
 
-/* Navigation links */
+/* Navigation links
 
 a.nav-link {
     font-family: "futura-pt", sans-serif;
@@ -36,7 +126,7 @@ div.card {
 }
 
 
-/* Landing page map Section Styling */
+/* Landing page map Section Styling
 
 .cover {
     background: url(../img/festival-cover.jpg) center;
@@ -56,3 +146,4 @@ nav {
 #andres {
     height: 570px;
 }
+*/
