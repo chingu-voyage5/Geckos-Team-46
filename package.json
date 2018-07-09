@@ -25,6 +25,7 @@
     "dependencies": {
         "bootstrap": "^4.1.1",
         "browser-sync": "^2.24.4",
+        "dotenv": "^6.0.0",
         "font-awesome": "^4.7.0",
         "gulp": "^3.9.1",
         "gulp-clean": "^0.3.1",
@@ -33,24 +34,5 @@
         "lodash": "^2.4.1",
         "marked": "^0.3.2",
         "popper.js": "^1.14.3"
-    },
-<<<<<<< HEAD
-    "devDependencies": {
-        "browser-sync": "^2.24.4",
-        "gulp": "^3.9.1",
-        "gulp-clean": "^0.3.1",
-        "gulp-sass": "^4.0.1"
     }
 }
-||||||| merged common ancestors
-    "devDependencies": {
-        "browser-sync": "^2.24.4",
-        "gulp": "^3.9.1",
-        "gulp-clean": "^0.3.1",
-        "gulp-sass": "^4.0.1"
-    }
-}
-=======
-    "devDependencies": {}
-}
->>>>>>> ba80d9296340263ee2c8e1eeca2c2c1b51278283
