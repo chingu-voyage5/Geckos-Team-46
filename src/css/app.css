@@ -129,11 +129,10 @@ body {
 .search {
     grid-area: search;
     display: grid;
-    grid-template-rows: 140px 140px;
+    grid-template-rows: 140px 87.33px;
     grid-template-areas: "searchHeader"
                          "searchInputs";
     background-color: #06040A !important;
-    align-items: center;
     justify-items: center;
     color: white;
     box-shadow: 0px 2px 12px black;
@@ -141,7 +140,7 @@ body {
 
 .searchHeader {
     grid-area: searchHeader;
-    margin: 85.33px 0px 0px;
+    margin: 75.33px 0px 0px;
     font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
 }
 
@@ -150,7 +149,7 @@ body {
     display: grid;
     grid-template-columns: 348px 132px 100px;
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-    padding-bottom: 50px;
+    margin: 20px 0px 36px;
 }
 
 .searchInput {
@@ -180,25 +179,26 @@ body {
 .creators {
     grid-area: creators;
     display: grid;
-    grid-template-rows: 205.33px auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "creatorsHeader  creatorsHeader  creatorsHeader"
-                         "andresImg  jorgeImg  brandonImg"
-                         "andresBio  jorgeBio  brandonBio";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ."
+                         ".  andresImg  jorgeImg  brandonImg  ."
+                         ".  andresBio  jorgeBio  brandonBio  .";
     justify-items: center;
 }
 
 .creators img {
-    width: 25vw;
+    width: 22vw;
 }
 
 .creators p {
-    width: 25vw;
+    width: 22vw;
     margin-bottom: 36px;
 }
 
 .creatorsHeader {
     grid-area: creatorsHeader;
+    margin-top: 75.33px;
 }
 
 .creatorsHeader h1 {
@@ -233,8 +233,8 @@ body {
 .footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "github  .  copyright";
+    grid-template-columns: 100px 206px auto 206px 100px;
+    grid-template-areas: ".  github  .  copyright  .";
     background-color: #06040A !important;
     align-items: center;
     justify-items: center;
