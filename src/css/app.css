@@ -1,32 +1,53 @@
+
+/*---- Body Styling ----*/
 body {
+    /*---- Setup CSS Grid on body ----*/
     display: grid;
-    grid-template-rows: 100vh auto 1fr 100px;
+    /*---- Create 4 rows of varing sizes ----*/
+    grid-template-rows: 100vh auto auto 100px;
+    /*---- Assign elements to grid rows ----*/
     grid-template-areas: "header"
                          "search"
                          "creators"
                          "footer";
+    /*---- Set font ----*/
+    font-family: "futura-pt", sans-serif;
+    /*---- Delete body's margins ----*/
     margin: 0;
 }
 
+/*---- Header Styling ----*/
 .header {
+    /*---- Label element for assignment ----*/
     grid-area: header;
+    /*---- Setup CSS Grid on header ----*/
     display: grid;
-    grid-template-rows: 64px 1fr;
+    /*---- Create 2 rows of varing sizes ----*/
+    grid-template-rows: auto auto;
+    /*---- Assign elements to grid rows ----*/
     grid-template-areas: "nav"
                          "hero";
-    background: url(../img/festival-cover-crop.jpg) center;
+    /*---- Set background image with overlay to darken ----*/
+    background: linear-gradient(
+        /*---- black to black gradient with opacity ----*/
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2)
+        ), url(../img/festival-cover-crop.jpg) center;
+    /*---- Have background image cover the header ----*/
     background-size: cover;
 }
 
+/*---- Navigation Styling ----*/
 .nav {
-    grid-area: nav;
-}
-
-.mainNav {
     width: 100%;
+    position: fixed;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "logo  none  navLinks"
+    grid-template-columns: 1fr 500px;
+    grid-template-areas: "logo  navLinks";
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        );
 }
 
 .logo {
@@ -35,53 +56,192 @@ body {
     color: #28a745 !important;
     font-size: 36px;
     align-items: center;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding: 10px 20px 10px;
+    text-decoration: none;
 }
 
 .navLinks {
     grid-area: navLinks;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: right;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
 }
 
-.events {
-    padding-right: 40px;
+.navLinks div {
+    width: 100px;
+    padding-top: 28.665px;
+}
+
+.navLinks div:hover {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        );
+}
+
+.navLinks a {
     color: white;
+    text-decoration: none;
+    padding: 28.665px 19px 28.665px 19px;
 }
 
-.about {
-    padding-right: 40px;
-    color: white;
+.navLinks a:hover {
+    text-decoration: none;
+    color: #28a745 !important;
 }
 
+/*---- Hero Banner Styling ----*/
 .hero {
     grid-area: hero;
+    margin: 80px 100px 0px;
+    color: white;
 }
 
+.hero hr {
+    color: white;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0),
+                                                rgba(255, 255, 255, 0.75),
+                                                rgba(255, 255, 255, 0));
+}
+
+.hero h1 {
+    font-size: 64px;
+}
+
+.heroParagraphOne {
+    font-size: 20px;
+}
+
+.learnMore {
+    background-color: #28a745 !important;
+    border: none;
+    color: white;
+    padding: 15px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*---- Search Styling ----*/
 .search {
     grid-area: search;
+    display: grid;
+    grid-template-rows: 140px 140px;
+    grid-template-areas: "searchHeader"
+                         "searchInputs";
+    background-color: #06040A !important;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    box-shadow: 0px 2px 12px black;
 }
 
+.searchHeader {
+    grid-area: searchHeader;
+    margin: 85.33px 0px 0px;
+    font-size: 48px;
+}
+
+.searchInputs {
+    grid-area: searchInputs;
+    display: grid;
+    grid-template-columns: 348px 132px 100px;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.searchInput {
+    padding-right: 80px;
+}
+
+.search input {
+    font-size: 20px;
+}
+
+.submit {
+  background-color: #28a745 !important;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*---- Extra Section if Needed ----*/
 .main {
     display: none;
     grid-area: main;
 }
 
+/*---- Creators Section Styling ----*/
 .creators {
     grid-area: creators;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ".  creatorsHeader  ."
+                         "andresImg  jorgeImg  brandonImg"
+                         "andresBio  jorgeBio  brandonBio";
+    align-items: center;
+    justify-items: center;
 }
 
-#andres {
-    width: 50vw;
+.creators img {
+    width: 30vw;
 }
 
-.creators div {
-    width: 50vw;
+.creators p {
+    width: 30vw;
 }
 
+.creatorsHeader {
+    grid-area: creatorsHeader;
+}
+
+.andresImg {
+    grid-area: andresImg;
+}
+
+.andresBio {
+    grid-area: andresBio;
+}
+
+.jorgeImg {
+    grid-area: jorgeImg;
+}
+
+.jorgeBio {
+    grid-area: jorgeBio;
+}
+
+.brandonImg {
+    grid-area: brandonImg;
+}
+
+.brandonBio {
+    grid-area: brandonBio;
+}
+
+/*---- Footer Styling ----*/
 .footer {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "github  .  copyright";
+    background-color: #06040A !important;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: white;
+}
+
+.github {
+    grid-area: github;
+}
+
+.copyright {
+    grid-area: copyright;
 }
