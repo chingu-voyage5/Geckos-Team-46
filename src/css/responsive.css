@@ -4,7 +4,7 @@
         /*---- Setup CSS Grid on body ----*/
         display: grid;
         /*---- Create 4 rows of varing sizes ----*/
-        grid-template-rows: 100vh auto auto 100px;
+        grid-template-rows: auto auto auto 100px;
         /*---- Assign elements to grid rows ----*/
         grid-template-areas: "header"
                              "search"
@@ -23,7 +23,7 @@
         /*---- Setup CSS Grid on header ----*/
         display: grid;
         /*---- Create 2 rows of varing sizes ----*/
-        grid-template-rows: auto auto;
+        grid-template-rows: 75.33px auto;
         /*---- Assign elements to grid rows ----*/
         grid-template-areas: "nav"
                              "hero";
@@ -39,10 +39,11 @@
 
     /*---- Navigation Styling ----*/
     .nav {
+        grid-area: nav;
         width: 100%;
         position: fixed;
         display: grid;
-        grid-template-columns: 1fr 500px;
+        grid-template-columns: auto 500px;
         grid-template-areas: "logo  navLinks";
         background: linear-gradient(
                 rgba(0, 0, 0, 0.2),
@@ -152,8 +153,10 @@
         grid-area: searchInputs;
         display: grid;
         grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "searchInput  category  select  submit";
         font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-        margin: 0px 0px 36px;
+        margin: 0px 0px 75.33px;
     }
 
     .searchInput {
@@ -163,6 +166,7 @@
     }
 
     .category {
+      display: block;
         margin-right: 10px;
     }
 
@@ -241,6 +245,7 @@
     .footer {
         grid-area: footer;
         display: grid;
+        grid-template-rows: auto;
         grid-template-columns: 100px 206px auto 206px 100px;
         grid-template-areas: ".  github  .  copyright  .";
         background-color: #06040A !important;

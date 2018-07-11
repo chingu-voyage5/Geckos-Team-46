@@ -3,7 +3,7 @@ body {
     /*---- Setup CSS Grid on body ----*/
     display: grid;
     /*---- Create 4 rows of varing sizes ----*/
-    grid-template-rows: 100vh auto auto 100px;
+    grid-template-rows: auto auto auto 100px;
     /*---- Assign elements to grid rows ----*/
     grid-template-areas: "header"
                          "search"
@@ -22,7 +22,7 @@ body {
     /*---- Setup CSS Grid on header ----*/
     display: grid;
     /*---- Create 2 rows of varing sizes ----*/
-    grid-template-rows: auto auto;
+    grid-template-rows: 75.33px auto;
     /*---- Assign elements to grid rows ----*/
     grid-template-areas: "nav"
                          "hero";
@@ -38,15 +38,15 @@ body {
 
 /*---- Navigation Styling ----*/
 .nav {
-    width: 100vw;
+    grid-area: nav;
     height: 75.33px;
     display: grid;
     grid-template-columns: auto 102px;
     grid-template-areas: "logo  dropDownMenuown";
     background: linear-gradient(
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)
-        );
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+                );
 }
 
 .logo {
@@ -91,8 +91,9 @@ body {
     top: 75.33px;
     left: 0;
     background-color: #06040A;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
+    animation: nav-down 0.3s;
 }
 
 .dropdownContent a {
@@ -101,6 +102,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: block;
+    animation: nav-opacity 0.6s;
 }
 
 .dropdownContent a:hover {
@@ -111,10 +113,31 @@ body {
     display: block;
 }
 
+@keyframes nav-down {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 213.35px;
+    }
+}
+
+@keyframes nav-opacity {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 /*---- Hero Banner Styling ----*/
 .hero {
     grid-area: hero;
-    margin: 80px 100px 0px;
+    margin: 0px 20px 0px;
     color: white;
 }
 
@@ -151,7 +174,7 @@ body {
     grid-area: search;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: 20px 1fr 20px;
     grid-template-areas: "searchHeader  searchHeader  searchHeader"
                          ".  searchInputs  .";
     background-color: #06040A !important;
@@ -162,33 +185,38 @@ body {
 
 .searchHeader {
     grid-area: searchHeader;
-    margin-top: 85.33px;
+    margin-top: 37.5px;
     font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
 }
 
 .searchInputs {
     grid-area: searchInputs;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "searchInput"
+                         "select"
+                         "submit";
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-    margin: 0px 0px 36px;
+    margin: 0px 0px 75.33px;
 }
 
 .searchInput {
+    grid-area: searchInput;
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-    padding-right: 80px;
-    margin-right: 20px;
 }
 
 .category {
+    grid-area: category;
+    display: none;
     margin-right: 10px;
 }
 
 .select {
-    margin-right: 20px;
+    grid-area: select;
 }
 
 .submit {
+    grid-area: submit;
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
     background-color: #28a745 !important;
     border: none;
@@ -208,27 +236,31 @@ body {
 .creators {
     grid-area: creators;
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 100px 1fr 1fr 1fr 100px;
-    grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ."
-                         ".  andresImg  jorgeImg  brandonImg  ."
-                         ".  andresBio  jorgeBio  brandonBio  .";
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-areas: ".  creatorsHeader  ."
+                         ".  andresImg  ."
+                         ".  andresBio  ."
+                         ".  jorgeImg  ."
+                         ".  jorgeBio  ."
+                         ".  brandonImg  ."
+                         ".  brandonBio  .";
     justify-items: center;
 }
 
 .creators img {
-    width: 22vw;
+    width: 80vw;
 }
 
 .creators p {
-    width: 22vw;
+    width: 80vw;
     margin-bottom: 36px;
 }
 
 .creatorsHeader {
     grid-area: creatorsHeader;
-    margin-top: 85.33px;
-    font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
+    margin-top: 37.5px;
+    font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1024 - 320)));
 }
 
 .andresImg {
@@ -259,8 +291,10 @@ body {
 .footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: 100px 206px auto 206px 100px;
-    grid-template-areas: ".  github  .  copyright  .";
+    grid-template-rows: auto auto;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-areas: ".  github  ."
+                         ".  copyright  .";
     background-color: #06040A !important;
     align-items: center;
     justify-items: center;
