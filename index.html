@@ -27,6 +27,16 @@
                 <div><a href="#">About</a></div>
                 <div><a href="#creators">Creators</a></div>
             </div>
+            <div class="dropDownMenu">
+                <button class="dropDownButton"><hr><hr><hr></button>
+                <div class="dropdownContent">
+                    <a href="#">Home</a>
+                    <a href="#search">Search</a>
+                    <a href="#">Events</a>
+                    <a href="#">About</a>
+                    <a href="#creators">Creators</a>
+                </div>
+            </div>
         </nav>
 
         <section class="hero">
@@ -47,16 +57,10 @@
     <section id="search" class="search">
         <h1 class="searchHeader">Search for Events</h1>
         <div class="searchInputs">
-            <div>
-                <input class="searchInput" type="text" placeholder="Event Name or City">
-            </div>
-            <div>
-                <label for="category">Category</label>
-                <select></select>
-            </div>
-            <div>
-                <input class="submit" type="submit" value="Search">
-            </div>
+            <input class="searchInput" type="text" placeholder="Event Name or City">
+            <label for="category" class="category">Category</label>
+            <select class="select"></select>
+            <input class="submit" type="submit" value="Search">
         </div>
     </section>
 
@@ -65,9 +69,7 @@
     </main>
 
     <section id="creators" class="creators">
-        <div class="creatorsHeader">
-            <h1>About the Creators</h1>
-        </div>
+        <h1 class="creatorsHeader">About the Creators</h1>
         <div class="andresImg">
             <img src="src/img/andres_crop.jpg" alt="Jose Andres Rivera">
         </div>
