@@ -1,7 +1,4 @@
 @media only screen and (min-width: 600px) {
-    body {
-        grid-template-rows: auto auto auto 100px;
-    }
     /*---- Creators Section Styling ----*/
     .creators {
         grid-template-rows: auto auto auto;
@@ -15,15 +12,11 @@
         width: 22vw;
     }
     .creatorsHeader {
-        margin-top: 85.33px;
+        margin-top: 73.32px;
     }
 }
 
 @media only screen and (min-width: 736px) {
-    /*---- Body Styling ----*/
-    body {
-        grid-template-rows: auto auto auto 100px;
-    }
     /*---- Navigation Styling ----*/
     .nav {
         width: 100%;
@@ -58,7 +51,7 @@
     }
     /*---- Hero Banner Styling ----*/
     .hero {
-        margin: 80px 100px 0px;
+        margin: 0px 100px 0px;
     }
     /*---- Search Styling ----*/
     /*---- Creators Section Styling ----*/

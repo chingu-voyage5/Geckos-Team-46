@@ -50,7 +50,7 @@ body {
     font-family: 'Aguafina Script', cursive;
     color: #28a745 !important;
     font-size: 36px;
-    padding: 10px 20px 10px;
+    padding: 15px 20px 15px;
     text-decoration: none;
 }
 
@@ -148,7 +148,7 @@ body {
 
 .hero h1 {
     font-size: calc(36px + (64 - 36) * ((100vw - 320px) / (1024 - 320)));
-    margin-top: 20.5rem;
+    margin-top: 50vh;
     color: #fff;
 }
 
@@ -192,13 +192,13 @@ body {
 
 .creators p {
     width: 80vw;
-    margin-bottom: 36px;
+    margin:20px 0px 36px;
     color: #fff;
 }
 
 .creatorsHeader {
     grid-area: creatorsHeader;
-    margin-top: 37.5px;
+    margin: 37.5px 0px 20px;
     font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1024 - 320)));
     color: #fff;
 }
@@ -236,7 +236,7 @@ body {
     grid-template-rows: auto auto;
     grid-template-columns: 20px 1fr 20px;
     grid-template-areas: ".  github  ." ".  copyright  .";
-    background-color: #06040A !important;
+    background-color: #28a745 !important;
     align-items: center;
     justify-items: center;
     text-align: center;
