@@ -2,28 +2,21 @@
     body {
         grid-template-rows: auto auto auto 100px;
     }
-
     /*---- Creators Section Styling ----*/
     .creators {
         grid-template-rows: auto auto auto;
         grid-template-columns: 20px 1fr 1fr 1fr 20px;
-        grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ."
-                             ".  andresImg  jorgeImg  brandonImg  ."
-                             ".  andresBio  jorgeBio  brandonBio  .";
+        grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ." ".  andresImg  jorgeImg  brandonImg  ." ".  andresBio  jorgeBio  brandonBio  .";
     }
-
     .creators img {
         width: 22vw;
     }
-
     .creators p {
         width: 22vw;
     }
-
     .creatorsHeader {
         margin-top: 85.33px;
     }
-
 }
 
 @media only screen and (min-width: 736px) {
@@ -31,7 +24,6 @@
     body {
         grid-template-rows: auto auto auto 100px;
     }
-
     /*---- Navigation Styling ----*/
     .nav {
         width: 100%;
@@ -39,84 +31,40 @@
         grid-template-columns: auto 500px;
         grid-template-areas: "logo  navLinks";
     }
-
     .navLinks {
         grid-area: navLinks;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         text-align: center;
     }
-
     .navLinks div {
         width: 100px;
         padding-top: 28.665px;
     }
-
     .navLinks div:hover {
-        background: linear-gradient(
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2)
-            );
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
-
     .navLinks a {
         color: white;
         text-decoration: none;
         padding: 28.665px 19px 28.665px 19px;
     }
-
     .navLinks a:hover {
         text-decoration: none;
         color: #28a745 !important;
     }
-
     .dropDownButton {
         display: none;
     }
-
     /*---- Hero Banner Styling ----*/
     .hero {
         margin: 80px 100px 0px;
     }
-
     /*---- Search Styling ----*/
-    .search {
-        grid-template-columns: 100px auto 100px;
-    }
-
-    .searchHeader {
-        margin-top: 85.33px;
-    }
-
-    .searchInputs {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        grid-template-areas: "searchInput  select  submit";
-    }
-
-    .searchInput {
-        margin-right: 20px;
-    }
-
-    .select {
-        margin: 0px 20px 0px 0px;
-    }
-
-    .select select {
-        padding: 7.33px 0px 7.33px;
-    }
-
-    /*---- Extra Section if Needed ----*/
-    .main {
-        display: none;
-        grid-area: main;
-    }
-
     /*---- Creators Section Styling ----*/
     .creators {
         grid-template-columns: 100px 1fr 1fr 1fr 100px;
     }
-
     /*---- Footer Styling ----*/
     .footer {
         grid-template-rows: auto;

@@ -32,9 +32,9 @@ class UI {
                              </div>
                              <div class="card-body">
                                   <div class="card-text">
-                                       <h2 class="text-center card-title">${eventInfo.name.text}</h2>
+                                       <h2 class="text-center card-title">${eventInfo.name.html}</h2>
                                        <p class="lead text-info">Event Information:</p>
-                                       <p>${eventInfo.description.text.substring(0,200)}...</p>
+                                       <p>${eventInfo.description.text}...</p>
                                        <span class="badge badge-primary">Capacity: ${eventInfo.capacity}</span>
                                        <span class="badge badge-secondary">Date & Time: ${eventInfo.start.local}</span>
 
