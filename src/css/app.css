@@ -42,9 +42,7 @@ body {
     display: grid;
     grid-template-columns: auto 102px;
     grid-template-areas: "logo  dropDownMenuown";
-    <<<<<<< HEAD background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    =======background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    >>>>>>>dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
 .logo {
@@ -151,7 +149,7 @@ body {
 .hero h1 {
     font-size: calc(36px + (64 - 36) * ((100vw - 320px) / (1024 - 320)));
     margin-top: 18rem;
-    color: #fff
+    color: #fff;
 }
 
 .heroParagraphOne {
@@ -169,80 +167,19 @@ body {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
+
 /*---- Search Styling ----*/
 
-=======
-/*---- Search Styling ----*/
 
-.search {
-    grid-area: search;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-areas: "searchHeader  searchHeader  searchHeader" ".  searchInputs  .";
-    background-color: #06040A !important;
-    justify-items: center;
-    color: white;
-    box-shadow: 0px 2px 12px black;
-}
-
-.searchHeader {
-    grid-area: searchHeader;
-    margin-top: 37.5px;
-    font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
-}
-
-.searchInputs {
-    grid-area: searchInputs;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "searchInput" "select" "submit";
-    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-    margin: 0px 0px 75.33px;
-}
-
-.searchInput {
-    grid-area: searchInput;
-    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-}
-
-.select {
-    grid-area: select;
-    margin: 5px 0px 5px;
-    text-align: center;
-}
-
-.select select {
-    color: grey;
-    font-size: 16px;
-    padding: 0px 70px 0px;
-}
-
-.submit {
-    grid-area: submit;
-    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-    background-color: #28a745 !important;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: inline-block;
-}
-
->>>>>>>dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
 /*---- Creators Section Styling ----*/
 
 .creators {
     grid-area: creators;
     display: grid;
-    <<<<<<< HEAD grid-template-rows: auto auto auto;
-    grid-template-columns: 100px 1fr 1fr 1fr 100px;
-    grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ." ".  andresImg  jorgeImg  brandonImg  ." ".  andresBio  jorgeBio  brandonBio  .";
-    =======grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-columns: 20px 1fr 20px;
     grid-template-areas: ".  creatorsHeader  ." ".  andresImg  ." ".  andresBio  ." ".  jorgeImg  ." ".  jorgeBio  ." ".  brandonImg  ." ".  brandonBio  .";
-    >>>>>>>dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0 justify-items: center;
+    justify-items: center;
 }
 
 .creators img {
@@ -257,12 +194,9 @@ body {
 
 .creatorsHeader {
     grid-area: creatorsHeader;
-    <<<<<<< HEAD margin-top: 85.33px;
-    font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
-    color: #fff;
-    =======margin-top: 37.5px;
+    margin-top: 37.5px;
     font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1024 - 320)));
-    >>>>>>>dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
+    color: #fff;
 }
 
 .andresImg {
@@ -295,14 +229,11 @@ body {
 .footer {
     grid-area: footer;
     display: grid;
-    <<<<<<< HEAD grid-template-columns: 100px 206px auto 206px 100px;
-    grid-template-areas: ".  github  .  copyright  .";
-    background-color: #212529 !important;
-    =======grid-template-rows: auto auto;
+    grid-template-rows: auto auto;
     grid-template-columns: 20px 1fr 20px;
     grid-template-areas: ".  github  ." ".  copyright  .";
     background-color: #06040A !important;
-    >>>>>>>dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0 align-items: center;
+    align-items: center;
     justify-items: center;
     text-align: center;
     color: white;

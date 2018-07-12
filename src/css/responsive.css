@@ -1,86 +1,35 @@
 @media only screen and (min-width: 600px) {
     body {
-<<<<<<< HEAD
-        /*---- Setup CSS Grid on body ----*/
-        display: grid;
-        /*---- Create 4 rows of varing sizes ----*/
-        grid-template-rows: 100vh auto auto 100px;
-        /*---- Assign elements to grid rows ----*/
-        grid-template-areas: "header" "search" "creators" "footer";
-        /*---- Set font ----*/
-        font-family: "futura-pt", sans-serif;
-        /*---- Delete body's margins ----*/
-        margin: 0;
-    }
-    /*---- Header Styling ----*/
-    .header {
-        /*---- Label element for assignment ----*/
-        grid-area: header;
-        /*---- Setup CSS Grid on header ----*/
-        display: grid;
-        /*---- Create 2 rows of varing sizes ----*/
-        grid-template-rows: auto auto;
-        /*---- Assign elements to grid rows ----*/
-        grid-template-areas: "nav" "hero";
-        /*---- Set background image with overlay to darken ----*/
-        background: linear-gradient(/*---- black to black gradient with opacity ----*/
-        rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/festival-cover-crop.jpg) center;
-        /*---- Have background image cover the header ----*/
-        background-size: cover;
-=======
         grid-template-rows: auto auto auto 100px;
     }
-
     /*---- Creators Section Styling ----*/
     .creators {
         grid-template-rows: auto auto auto;
         grid-template-columns: 20px 1fr 1fr 1fr 20px;
-        grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ."
-                             ".  andresImg  jorgeImg  brandonImg  ."
-                             ".  andresBio  jorgeBio  brandonBio  .";
+        grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ." ".  andresImg  jorgeImg  brandonImg  ." ".  andresBio  jorgeBio  brandonBio  .";
     }
-
     .creators img {
         width: 22vw;
     }
-
     .creators p {
         width: 22vw;
     }
-
     .creatorsHeader {
         margin-top: 85.33px;
     }
-
 }
 
 @media only screen and (min-width: 736px) {
     /*---- Body Styling ----*/
     body {
         grid-template-rows: auto auto auto 100px;
->>>>>>> dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
     }
     /*---- Navigation Styling ----*/
     .nav {
         width: 100%;
-<<<<<<< HEAD
-        display: grid !important;
-        grid-template-columns: 1fr 500px;
-        grid-template-areas: "logo  navLinks";
-        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    }
-    .logo {
-        grid-area: logo;
-        font-family: 'Aguafina Script', cursive;
-        color: #28a745 !important;
-        font-size: 36px;
-        padding: 10px 20px 10px;
-        text-decoration: none;
-=======
         position: fixed;
         grid-template-columns: auto 500px;
         grid-template-areas: "logo  navLinks";
->>>>>>> dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
     }
     .navLinks {
         grid-area: navLinks;
@@ -110,130 +59,16 @@
     /*---- Hero Banner Styling ----*/
     .hero {
         margin: 80px 100px 0px;
-<<<<<<< HEAD
-        color: white;
-    }
-    .hero hr {
-        color: white;
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-    }
-    .hero h1 {
-        font-size: calc(36px + (64 - 36) * ((100vw - 320px) / (1024 - 320)));
-    }
-    .heroParagraphOne {
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-    }
-    .learnMore {
-        display: inline-block;
-        font-size: 16px;
-        color: white;
-        background-color: #28a745 !important;
-        border: none;
-        padding: 15px 48px;
-        text-align: center;
-        text-decoration: none;
-=======
->>>>>>> dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
     }
     /*---- Search Styling ----*/
-<<<<<<< HEAD
-=======
-    .search {
-        grid-template-columns: 100px auto 100px;
-    }
-
-    .searchHeader {
-        margin-top: 85.33px;
-    }
-
-    .searchInputs {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        grid-template-areas: "searchInput  select  submit";
-    }
-
-    .searchInput {
-        margin-right: 20px;
-    }
-
-    .select {
-        margin: 0px 20px 0px 0px;
-    }
-
-    .select select {
-        padding: 7.33px 0px 7.33px;
-    }
-
-    /*---- Extra Section if Needed ----*/
-    .main {
-        display: none;
-        grid-area: main;
-    }
-
->>>>>>> dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
     /*---- Creators Section Styling ----*/
     .creators {
         grid-template-columns: 100px 1fr 1fr 1fr 100px;
-<<<<<<< HEAD
-        grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ." ".  andresImg  jorgeImg  brandonImg  ." ".  andresBio  jorgeBio  brandonBio  .";
-        justify-items: center;
-    }
-    .creators img {
-        width: 22vw;
-    }
-    .creators p {
-        width: 22vw;
-        margin-bottom: 36px;
-    }
-    .creatorsHeader {
-        grid-area: creatorsHeader;
-        margin-top: 85.33px;
-        font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
-    }
-    .andresImg {
-        grid-area: andresImg;
-    }
-    .andresBio {
-        grid-area: andresBio;
-    }
-    .jorgeImg {
-        grid-area: jorgeImg;
-    }
-    .jorgeBio {
-        grid-area: jorgeBio;
-    }
-    .brandonImg {
-        grid-area: brandonImg;
-    }
-    .brandonBio {
-        grid-area: brandonBio;
-=======
->>>>>>> dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
     }
     /*---- Footer Styling ----*/
     .footer {
         grid-template-rows: auto;
         grid-template-columns: 100px 206px auto 206px 100px;
         grid-template-areas: ".  github  .  copyright  .";
-<<<<<<< HEAD
-        background-color: #06040A !important;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        color: white;
-    }
-    .footer a {
-        color: white;
-        text-decoration: none;
-    }
-    .github {
-        grid-area: github;
-    }
-    .copyright {
-        grid-area: copyright;
-=======
->>>>>>> dbe2e9cfead2d83020e4ff698af2cea9c10eeeb0
     }
 }
