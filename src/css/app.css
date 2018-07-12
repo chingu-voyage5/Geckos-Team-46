@@ -148,7 +148,7 @@ body {
 
 .hero h1 {
     font-size: calc(36px + (64 - 36) * ((100vw - 320px) / (1024 - 320)));
-    margin-top: 18rem;
+    margin-top: 20.5rem;
     color: #fff;
 }
 
