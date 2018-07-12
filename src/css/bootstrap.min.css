@@ -100,10 +100,10 @@ h6 {
     margin-bottom: .5rem
 }
 
-p {
+/*p {
     margin-top: 0;
     margin-bottom: 1rem
-}
+}*/
 
 abbr[data-original-title],
 abbr[title] {
@@ -223,7 +223,7 @@ figure {
 }
 
 
-/* 
+/*
 img {
     vertical-align: middle;
     border-style: none
