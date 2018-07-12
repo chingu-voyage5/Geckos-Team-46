@@ -1,4 +1,4 @@
-/*!
+/* !
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -8994,7 +8994,7 @@ button.bg-dark:hover {
 .text-truncate {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .text-left {
@@ -9273,4 +9273,4 @@ a.text-dark:hover {
 }
 
 
-/*# sourceMappingURL=bootstrap.min.css.map */
+/* # sourceMappingURL=bootstrap.min.css.map */
