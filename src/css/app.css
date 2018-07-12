@@ -3,7 +3,7 @@ body {
     /*---- Setup CSS Grid on body ----*/
     display: grid;
     /*---- Create 4 rows of varing sizes ----*/
-    grid-template-rows: auto auto auto 100px;
+    grid-template-rows: 100vh auto auto 100px;
     /*---- Assign elements to grid rows ----*/
     grid-template-areas: "header"
                          "search"
@@ -205,14 +205,16 @@ body {
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
 }
 
-.category {
-    grid-area: category;
-    display: none;
-    margin-right: 10px;
-}
-
 .select {
     grid-area: select;
+    margin: 5px 0px 5px;
+    text-align: center;
+}
+
+.select select {
+    color: grey;
+    font-size: 16px;
+    padding: 0px 70px 0px;
 }
 
 .submit {

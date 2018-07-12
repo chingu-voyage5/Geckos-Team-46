@@ -1,63 +1,43 @@
+@media only screen and (min-width: 600px) {
+    body {
+        grid-template-rows: auto auto auto 100px;
+    }
+
+    /*---- Creators Section Styling ----*/
+    .creators {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 20px 1fr 1fr 1fr 20px;
+        grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ."
+                             ".  andresImg  jorgeImg  brandonImg  ."
+                             ".  andresBio  jorgeBio  brandonBio  .";
+    }
+
+    .creators img {
+        width: 22vw;
+    }
+
+    .creators p {
+        width: 22vw;
+    }
+
+    .creatorsHeader {
+        margin-top: 85.33px;
+    }
+
+}
+
 @media only screen and (min-width: 736px) {
     /*---- Body Styling ----*/
     body {
-        /*---- Setup CSS Grid on body ----*/
-        display: grid;
-        /*---- Create 4 rows of varing sizes ----*/
         grid-template-rows: auto auto auto 100px;
-        /*---- Assign elements to grid rows ----*/
-        grid-template-areas: "header"
-                             "search"
-                             "creators"
-                             "footer";
-        /*---- Set font ----*/
-        font-family: "futura-pt", sans-serif;
-        /*---- Delete body's margins ----*/
-        margin: 0;
-    }
-
-    /*---- Header Styling ----*/
-    .header {
-        /*---- Label element for assignment ----*/
-        grid-area: header;
-        /*---- Setup CSS Grid on header ----*/
-        display: grid;
-        /*---- Create 2 rows of varing sizes ----*/
-        grid-template-rows: 75.33px auto;
-        /*---- Assign elements to grid rows ----*/
-        grid-template-areas: "nav"
-                             "hero";
-        /*---- Set background image with overlay to darken ----*/
-        background: linear-gradient(
-            /*---- black to black gradient with opacity ----*/
-                  rgba(0, 0, 0, 0.2),
-                  rgba(0, 0, 0, 0.2)
-            ), url(../img/festival-cover-crop.jpg) center;
-        /*---- Have background image cover the header ----*/
-        background-size: cover;
     }
 
     /*---- Navigation Styling ----*/
     .nav {
-        grid-area: nav;
         width: 100%;
         position: fixed;
-        display: grid;
         grid-template-columns: auto 500px;
         grid-template-areas: "logo  navLinks";
-        background: linear-gradient(
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2)
-            );
-    }
-
-    .logo {
-        grid-area: logo;
-        font-family: 'Aguafina Script', cursive;
-        color: #28a745 !important;
-        font-size: 36px;
-        padding: 10px 20px 10px;
-        text-decoration: none;
     }
 
     .navLinks {
@@ -96,92 +76,34 @@
 
     /*---- Hero Banner Styling ----*/
     .hero {
-        grid-area: hero;
         margin: 80px 100px 0px;
-        color: white;
-    }
-
-    .hero hr {
-        color: white;
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0),
-                                                    rgba(255, 255, 255, 0.75),
-                                                    rgba(255, 255, 255, 0));
-    }
-
-    .hero h1 {
-        font-size: calc(36px + (64 - 36) * ((100vw - 320px) / (1024 - 320)));
-    }
-
-    .heroParagraphOne {
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-    }
-
-    .learnMore {
-        display: inline-block;
-        font-size: 16px;
-        color: white;
-        background-color: #28a745 !important;
-        border: none;
-        padding: 15px 48px;
-        text-align: center;
-        text-decoration: none;
     }
 
     /*---- Search Styling ----*/
     .search {
-        grid-area: search;
-        display: grid;
-        grid-template-rows: auto auto;
         grid-template-columns: 100px auto 100px;
-        grid-template-areas: "searchHeader  searchHeader  searchHeader"
-                             ".  searchInputs  .";
-        background-color: #06040A !important;
-        justify-items: center;
-        color: white;
-        box-shadow: 0px 2px 12px black;
     }
 
     .searchHeader {
-        grid-area: searchHeader;
         margin-top: 85.33px;
-        font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
     }
 
     .searchInputs {
-        grid-area: searchInputs;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
         grid-template-rows: auto;
-        grid-template-areas: "searchInput  category  select  submit";
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-        margin: 0px 0px 75.33px;
+        grid-template-areas: "searchInput  select  submit";
     }
 
     .searchInput {
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-        padding-right: 80px;
         margin-right: 20px;
-    }
-
-    .category {
-      display: block;
-        margin-right: 10px;
     }
 
     .select {
-        margin-right: 20px;
+        margin: 0px 20px 0px 0px;
     }
 
-    .submit {
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)));
-        background-color: #28a745 !important;
-        border: none;
-        color: white;
-        padding: 5px 10px;
-        text-decoration: none;
-        display: inline-block;
+    .select select {
+        padding: 7.33px 0px 7.33px;
     }
 
     /*---- Extra Section if Needed ----*/
@@ -192,79 +114,13 @@
 
     /*---- Creators Section Styling ----*/
     .creators {
-        grid-area: creators;
-        display: grid;
-        grid-template-rows: auto auto auto;
         grid-template-columns: 100px 1fr 1fr 1fr 100px;
-        grid-template-areas: ".  creatorsHeader  creatorsHeader  creatorsHeader  ."
-                             ".  andresImg  jorgeImg  brandonImg  ."
-                             ".  andresBio  jorgeBio  brandonBio  .";
-        justify-items: center;
-    }
-
-    .creators img {
-        width: 22vw;
-    }
-
-    .creators p {
-        width: 22vw;
-        margin-bottom: 36px;
-    }
-
-    .creatorsHeader {
-        grid-area: creatorsHeader;
-        margin-top: 85.33px;
-        font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1024 - 320)));
-    }
-
-    .andresImg {
-        grid-area: andresImg;
-    }
-
-    .andresBio {
-        grid-area: andresBio;
-    }
-
-    .jorgeImg {
-        grid-area: jorgeImg;
-    }
-
-    .jorgeBio {
-        grid-area: jorgeBio;
-    }
-
-    .brandonImg {
-        grid-area: brandonImg;
-    }
-
-    .brandonBio {
-        grid-area: brandonBio;
     }
 
     /*---- Footer Styling ----*/
     .footer {
-        grid-area: footer;
-        display: grid;
         grid-template-rows: auto;
         grid-template-columns: 100px 206px auto 206px 100px;
         grid-template-areas: ".  github  .  copyright  .";
-        background-color: #06040A !important;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        color: white;
-    }
-
-    .footer a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .github {
-        grid-area: github;
-    }
-
-    .copyright {
-        grid-area: copyright;
     }
 }
