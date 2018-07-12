@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="src/css/app.css">
     <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <!-- This link is to make the Logo cursive -->
     <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
     <!-- Link to github font awesome icon -->
@@ -22,7 +23,7 @@
             <a class="logo" href="#">Lively</a>
             <div class="navLinks">
                 <div><a href="#">Home</a></div>
-                <div><a href="#search">Search</a></div>
+                <div><a href="#search-events">Search</a></div>
                 <div><a href="#">Events</a></div>
                 <div><a href="#">About</a></div>
                 <div><a href="#creators">Creators</a></div>
@@ -31,7 +32,7 @@
                 <button class="dropDownButton"><hr><hr><hr></button>
                 <div class="dropdownContent">
                     <a href="#">Home</a>
-                    <a href="#search">Search</a>
+                    <a href="#search-events">Search</a>
                     <a href="#">Events</a>
                     <a href="#">About</a>
                     <a href="#creators">Creators</a>
@@ -42,42 +43,33 @@
         <section class="hero">
             <h1>EXPLORE EVENTS</h1>
             <p class="heroParagraphOne">
-                This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+                Lively is a website that utilizes the EventBrite API to display global and local events.
             </p>
             <hr>
-            <p class="heroParagraphTwo">
-                It uses utility classes for typography and spacing to space content out within the larger container.
-            </p>
-            <p><a class="learnMore" href="#" role="button">Learn More</a></p>
         </section>
     </header>
 
-    <section id="search" class="search">
-        <h1 class="searchHeader">Search for Events</h1>
-        <div class="searchInputs">
-<<<<<<< HEAD
-            <div>
-                <input id="event-name" class="searchInput" type="text" placeholder="Event Name or City">
+    <div class="container search-wrapper">
+        <div id="search-events" class="card card-body">
+            <h1 class="text-center">Search for Events by Name or City</h1>
+
+            <div class="form-group">
+                <label for="event-name">Search by Name or City</label>
+                <input type="text" id="event-name" class="form-control" placeholder="Search By Name or City">
             </div>
-            <div>
+
+            <div class="form-group">
                 <label for="category">Category</label>
-                <select id="category"></select>
+                <select class="form-control" id="category"></select>
             </div>
-            <div>
-                <input id="submitBtn" class="submit" type="submit" value="Search">
+
+            <div class="form-group">
+                <input type="submit" class="mt-5 form-control btn btn-success" id="submitBtn" value="Search">
             </div>
-=======
-            <input class="searchInput" type="text" placeholder="Event Name or City">
-            <label for="category" class="category">Category</label>
-            <select class="select"></select>
-            <input class="submit" type="submit" value="Search">
->>>>>>> 62a253118498eafa368d3988946e4531524c1432
+
         </div>
-    </section>
-
-    <main class="main">
-
-    </main>
+        <div id="result" class="row mt-5"></div>
+    </div>
 
     <section id="creators" class="creators">
         <h1 class="creatorsHeader">About the Creators</h1>
@@ -87,9 +79,7 @@
         <div class="andresBio">
             <p>
                 Andres Rivera is a Full-Stack Developer living in West Texas.
-                <br><br>
-                His passion is to design a life with meaningful relationships
-                and meaningful work.
+                <br><br> His passion is to design a life with meaningful relationships and meaningful work.
             </p>
         </div>
         <div class="jorgeImg">
@@ -97,14 +87,8 @@
         </div>
         <div class="jorgeBio">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                soluta ipsum et facere explicabo distinctio voluptatem quo
-                eligendi minima tempora nulla nostrum cumque amet autem
-                laudantium quas nesciunt, quod accusantium. Lorem ipsum dolor
-                sit amet, consectetur adipisicing elit. Totam quo, laudantium,
-                est consectetur mollitia minima recusandae optio accusamus enim
-                quae alias necessitatibus, odio cumque. Nobis impedit vero
-                laudantium nihil nemo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta ipsum et facere explicabo distinctio voluptatem quo eligendi minima tempora nulla nostrum cumque amet autem laudantium quas nesciunt, quod accusantium. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Totam quo, laudantium, est consectetur mollitia minima recusandae optio accusamus enim quae alias necessitatibus, odio cumque. Nobis impedit vero laudantium nihil nemo.
             </p>
         </div>
         <div class="brandonImg">
@@ -112,12 +96,8 @@
         </div>
         <div class="brandonBio">
             <p>
-                Brandon Vernon is a front-end web developer in Austin, Texas.
-                Before that he was the lead brewer and operations manager at
-                Strange Land Brewery.
-                <br><br>
-                He enjoys spending time with his beautiful wife and daughter,
-                brewing beer, and an array of outdoor activities.
+                Brandon Vernon is a front-end web developer in Austin, Texas. Before that he was the lead brewer and operations manager at Strange Land Brewery.
+                <br><br> He enjoys spending time with his beautiful wife and daughter, brewing beer, and an array of outdoor activities.
             </p>
         </div>
     </section>
