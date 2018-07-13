@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
+global.config = { keyEven: process.env.EVENTKEY };
+require('js/eventbrite.js');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -44,7 +46,6 @@ gulp.task('fa', function() {
         .pipe(gulp.dest("src/css"));
 });
 
-global.config = {keyEven: process.env.EVENTKEY};
-require('js/eventbrite');
+
 
 gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
