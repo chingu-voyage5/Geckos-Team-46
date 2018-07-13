@@ -45,12 +45,10 @@ gulp.task('fa', function() {
         .pipe(gulp.dest("src/css"));
 });
 
-gulp.task('evenKey', function () {
-    return gulp.src('js/*.js')
-      .pipe(header("const keyEven ='"process.env.EVENTKEY"';"))
-      .pipe(gulp.dest('dist')) 
-});
+gulp.src('js/*.js')
+    .pipe(header("const keyEven ='"process.env.EVENTKEY"';"))
+    .pipe(gulp.dest('./dist/')) 
 
 
 
-gulp.task('default', ['js', 'serve', 'fa', 'fonts','evenKey']);
+gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
