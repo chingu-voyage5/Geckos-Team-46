@@ -1,5 +1,4 @@
 // Instanciate both class
-const key = process.env.EVENTKEY;
 const eventbrite = new EventBrite();
 const ui = new UI();
 

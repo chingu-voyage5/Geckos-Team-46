@@ -21,6 +21,7 @@ gulp.task('js', function() {
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
         port: process.env.PORT,
+        key: process.env.EVENTKEY,
         host: '0.0.0.0',
         notify: false,
         open: false,
