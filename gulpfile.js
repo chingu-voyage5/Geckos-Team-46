@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const key = process.env.EVENTKEY,
+const key = process.env.EVENTKEY;
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -43,6 +43,8 @@ gulp.task('fa', function() {
     return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
         .pipe(gulp.dest("src/css"));
 });
+
+
 
 
 
