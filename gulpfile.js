@@ -46,12 +46,8 @@ gulp.task('fa', function() {
 });
 
 gulp.task('config', function() {
-  return gulp.src('js/config.tmpl.js')
-    .pipe(template({config: JSON.stringify({
-      key: process.env.EVENTKEY
-    })}))
-    .pipe(rename('config.js'))
-    .pipe(gulp.dest('js/config.js'));
+  var envKey = process.env.EVENTKEY;
+  .pipe(header("var key ='"+envKey+"';"))
 });
 
 

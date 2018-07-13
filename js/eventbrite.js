@@ -1,8 +1,7 @@
 class EventBrite {
-    var config = require(js/config.js);
     // Constructor when instantiate
     constructor() {
-        this.auth_token = config.key;
+        this.auth_token = key;
         this.orderby = 'date';
     }
 
