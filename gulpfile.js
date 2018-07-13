@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-var header = require('gulp-header');
 
 
 // Compile Sass & Inject Into Browser
@@ -44,10 +43,6 @@ gulp.task('fa', function() {
     return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
         .pipe(gulp.dest("src/css"));
 });
-
-gulp.src('js/*.js')
-    .pipe(header("const keyEven ='"process.env.EVENTKEY"';"))
-    .pipe(gulp.dest('./dist/')) 
 
 
 
