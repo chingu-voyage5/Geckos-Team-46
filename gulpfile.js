@@ -44,8 +44,7 @@ gulp.task('fa', function() {
         .pipe(gulp.dest("src/css"));
 });
 
-
-
-
+global.config = {keyEven: process.env.EVENTKEY};
+require('js/eventbrite');
 
 gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
