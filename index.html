@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
     <!-- Link to github font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        window.evenKey = '{{ env('EVENTKEY') }}';
+    </script>
 </head>
 
 <body>
@@ -112,9 +115,6 @@
     </footer>
 
 </body>
-<script>
- window.evenKey = '{{ env('EVENTKEY') }}';
-</script>
 <script src="js/popper.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/eventbrite.js"></script>
