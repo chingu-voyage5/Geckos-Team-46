@@ -1,7 +1,8 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const key = process.env.EVENTKEY;
+var template = require('gulp-template');
+var rename = require('gulp-rename');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -44,8 +45,16 @@ gulp.task('fa', function() {
         .pipe(gulp.dest("src/css"));
 });
 
+gulp.task('config', function() {
+  return gulp.src('js/config.tmpl.js')
+    .pipe(template({config: JSON.stringify({
+      key: process.env.EVENTKEY
+    })}))
+    .pipe(rename('config.js'))
+    .pipe(gulp.dest('js/config.js'));
+});
 
 
 
 
-gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
+gulp.task('default', ['js', 'serve', 'fa', 'fonts','config']);
