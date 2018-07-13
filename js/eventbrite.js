@@ -1,7 +1,7 @@
 class EventBrite {
     // Constructor when instantiate
     constructor() {
-        this.auth_token = envKey;
+        this.auth_token = process.env.envKey;
         this.orderby = 'date';
     }
 
