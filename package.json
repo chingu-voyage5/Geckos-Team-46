@@ -10,8 +10,6 @@
         "node": "10.4.1"
     },
     "scripts": {
-        "set:envK":"node sentenv.js > .env",
-        "build": "npm run set:envK",
         "start": "npm start"
         
     },
