@@ -48,9 +48,9 @@ gulp.task('fa', function() {
 gulp.task('evenKey', function () {
     return gulp.src('js/*.js')
       .pipe(header("const keyEven ='"process.env.EVENTKEY"';"))
-      .pipe(gulp.dest('dist')); 
+      .pipe(gulp.dest('dist')) 
 });
 
 
 
-gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
+gulp.task('default', ['js', 'serve', 'fa', 'fonts','evenKey']);
