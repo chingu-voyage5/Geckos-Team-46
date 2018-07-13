@@ -1,7 +1,7 @@
 class EventBrite {
     // Constructor when instantiate
     constructor() {
-        this.auth_token = keyEven;
+        this.auth_token = window.myKey;
         this.orderby = 'date';
     }
 
