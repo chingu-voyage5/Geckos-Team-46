@@ -25,8 +25,8 @@ class UI {
 
             events.forEach(eventInfo => {
                 HTMLTemplate += `
-                   <div class="col-xs-12 col-md-4 mt-4">
-                        <div class="card">
+                    <div class="col-12 col-md-4 mt-4">
+                    <div class="card">
                              <div class="card-body">
                                   <img class="img-fluid mb-2" src="${eventInfo.logo !== null ? eventInfo.logo.url : ''}"> 
                              </div>
@@ -42,7 +42,7 @@ class UI {
                                   </div>
                              </div>
                         </div>
-                   </div>
+                    </div>
               
               `;
             });
