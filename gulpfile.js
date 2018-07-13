@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const key = process.env.EVENTKEY,
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -21,7 +22,6 @@ gulp.task('js', function() {
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
         port: process.env.PORT,
-        key: process.env.EVENTKEY,
         host: '0.0.0.0',
         notify: false,
         open: false,
