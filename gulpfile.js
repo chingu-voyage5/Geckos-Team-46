@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const replace = require('gulp-replace');
 
 
 // Compile Sass & Inject Into Browser
@@ -45,12 +44,8 @@ gulp.task('fa', function() {
         .pipe(gulp.dest("src/css"));
 });
 
-gulp.task('config', function() {
-  var envKey = process.env.EVENTKEY;
-  return gulp.src('js/eventbrite.js').pipe(replace(/key/g, envKey));
-});
 
 
 
 
-gulp.task('default', ['js', 'serve', 'fa', 'fonts','config']);
+gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
