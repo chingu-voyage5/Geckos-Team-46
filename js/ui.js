@@ -34,7 +34,7 @@ class UI {
                                   <div class="card-text">
                                        <h2 class="text-center card-title">${eventInfo.name.html}</h2>
                                        <p class="lead text-info">Event Information:</p>
-                                       <p>${eventInfo.description.text}...</p>
+                                       <p>${String(eventInfo.description.text).substring(0,200)}...</p>
                                        <span class="badge badge-primary">Capacity: ${eventInfo.capacity}</span>
                                        <span class="badge badge-secondary">Date & Time: ${eventInfo.start.local}</span>
 
