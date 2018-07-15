@@ -129,7 +129,14 @@ body {
         opacity: 100%;
     }
 }
-
+/*--- card equals ---*/
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*---- Hero Banner Styling ----*/
 
